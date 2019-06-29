@@ -1,0 +1,42 @@
+@import "../../themes/default/var";
+@import "../../themes/default/utils.scss";
+
+header {
+  background-color: $lightBlueColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .user {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    p {
+      font-size: 20px;
+      color: white;
+    }
+    button {
+      color: white;
+      background: $greenColor;
+      &:hover {
+        background: $greenColor;
+      }
+    }
+    .logout {
+      margin-left: 50px;
+    }
+  }
+}
+@include media-down(sm) {
+  header {
+    justify-content: space-evenly;
+    .user {
+      p{
+        font-size: 15px;
+      }
+      .logout {
+        margin-left: 10px;
+      }
+    }
+  }
+}

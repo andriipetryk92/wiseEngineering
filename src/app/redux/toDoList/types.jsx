@@ -1,0 +1,10 @@
+const Constants = {
+    ADD_TASK: 'ADD_TASK',
+    DONE_TASK: 'DONE_TASK',
+    RENAME_VALUE: 'RENAME_VALUE',
+    ADD_POINT: 'ADD_POINT',
+    DONE_POINT: 'DONE_POINT',
+    RENAME_VALUE_POINT: 'RENAME_VALUE_POINT',
+    CREATE_NEW_TASKS: 'CREATE_NEW_TASKS'
+}
+export default Constants;

@@ -1,0 +1,94 @@
+@import "../../themes/default/utils.scss";
+@import "../../themes/default/var.scss";
+
+.list-wrapper {
+  margin-top: 30px;
+  p {
+    font-size: 35px;
+  }
+  input {
+    width: 200px;
+    height: 40px;
+    border: 1px solid $lightBlueColor;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+  }
+  .new-to-do {
+    p {
+      font-size: 35px;
+    }
+    .new-task {
+      display: flex;
+      align-items: center;
+    }
+  }
+  button {
+    height: 50px;
+    background: $greenColor;
+    margin-left: 20px;
+    span {
+      font-size: 20px;
+      color: white;
+    }
+    &:hover {
+      cursor: pointer;
+      background: $greenColor;
+    }
+  }
+  .list-to-do {
+    margin-top: 50px;
+    .task {
+      .rename-task {
+        margin: 10px 0;
+      }
+      p {
+        text-align: left;
+      }
+    }
+    .rename-point {
+      margin-bottom: 20px;
+    }
+  }
+}
+.points-wrapper {
+  margin-bottom: 20px;
+  .points {
+    p {
+      font-size: 20px;
+    }
+    button {
+      height: 35px;
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@include media-down(sm) {
+  .list-wrapper {
+    .content {
+      margin: 20px 0;
+      p {
+        font-size: 20px;
+      }
+      input,
+      select {
+        width: 150px;
+      }
+    }
+    .content {
+      button {
+        height: 40px;
+        span {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
